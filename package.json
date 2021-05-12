@@ -1,0 +1,21 @@
+{
+  "name": "11ty-tailwind-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:process": "npx postcss src/scss/global.css --o src/_includes/assets/css/global.css --watch",
+    "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
+    "serve": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "concurrently": "^6.1.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
